@@ -45,6 +45,6 @@ function getCurrentTabUrl(callback) {
 
 document.addEventListener('DOMContentLoaded', function() {
 	getCurrentTabUrl(function(url) {
-		new QRCode(document.getElementById("thecode"), url);
+		new QRCode(document.getElementById("thecode"), {text: url, width:250, height:250});
 	});
 });
